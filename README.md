@@ -1,5 +1,7 @@
 # OMC Hooks
 
+> **[한국어 가이드 (Korean Guide)](./README-ko.md)**
+
 > Enhanced hooks for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — GUI-based tool approval and status line HUD.
 
 ## Features
