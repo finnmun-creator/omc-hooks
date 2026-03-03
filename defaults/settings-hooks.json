@@ -1,0 +1,67 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME}}/.claude/hooks/keyword-detector.mjs"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME}}/.claude/hooks/session-start.mjs"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME}}/.claude/hooks/pre-tool-use.mjs"
+          }
+        ]
+      },
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME}}/.claude/hooks/input-notify.mjs"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|Edit|Write|WebFetch|Task|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME}}/.claude/hooks/permission-gui.mjs",
+            "timeout": 600000
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME}}/.claude/hooks/post-tool-use.mjs"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node {{HOME}}/.claude/hud/omc-hud.mjs"
+  }
+}

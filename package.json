@@ -1,0 +1,37 @@
+{
+  "name": "omc-hooks",
+  "version": "1.0.0",
+  "description": "Enhanced hooks for Claude Code — GUI-based tool approval and status line HUD",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "omc-hooks": "./cli.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "cli.mjs",
+    "hooks/",
+    "ui/",
+    "hud/",
+    "defaults/",
+    "lib/",
+    "install.ps1",
+    "install.sh",
+    "uninstall.ps1",
+    "uninstall.sh",
+    "README.md"
+  ],
+  "keywords": [
+    "claude-code",
+    "hooks",
+    "gui",
+    "approval",
+    "hud"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finnmun-creator/omc-hooks.git"
+  }
+}

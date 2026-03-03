@@ -1,0 +1,11 @@
+{
+  "rules": [],
+  "version": 2,
+  "config": {
+    "autoApproveTier0": true,
+    "autoApproveTier1": false,
+    "dangerousRequireDoubleConfirm": true,
+    "burstWindowMs": 5000,
+    "sessionApprovalTTLHours": 24
+  }
+}
